@@ -4,7 +4,7 @@ body, html{
 	padding: 0;
 	margin: 0;
 	
-	font-size: calc(18px + 6 * ((100vw) / 320));
+	//font-size: calc(18px + 6 * ((100vw) / 320));
 }
 
 h1{
