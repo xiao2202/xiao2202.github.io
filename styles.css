@@ -1,9 +1,116 @@
-@media screen and (max-width: 600px) {
-  body {
-      font-family: 'Helvetica', 'Arial', sans-serif;
-      /* calculate the font size based on the view width:  */
-      font-size: calc(18px + 6 * ((100vw) / 320));
-      /* for comparison, see what 24px looks like: */
-      /* font-size: 24px; */
-  }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+body, html{
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	margin: 0;
 }
+
+h1{
+	font-weight: 800;
+	font-size: 50px;
+}
+
+h3{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+h4{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.hero-banner{
+	background-color: #007FFF;
+	min-height: 100vh;
+	padding: 50px 20px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero-banner h1{
+	color: white;
+	margin: 14px 0 20px;
+}
+
+.hero-banner h3{
+	color: white;
+	margin: 0 0 35px;
+}
+
+.hero-banner h4,
+.hero-banner h4 a{
+	color: white;
+	margin: 0;
+}
+
+.character1{
+	background: url(characters/red-circle-guy.png) no-repeat 0 0;
+	background-size: 100%;
+	width: 263px;
+	height: 344px;
+	position: absolute; top: 10%; right: 10%px; 
+	transform: rotate(15deg);
+}
+
+.character2{
+	background: url(characters/circle-guy.png) no-repeat 0 0;
+	background-size: 100%;
+	width: 259px;
+	height: 371px;
+	position: absolute; top: 303px; right: 177px; 
+}
+
+.character3{
+	background: url(characters/yellow-alien.png) no-repeat 0 0;
+	background-size: 100%;
+	width: 197px;
+	height: 286px;
+	position: absolute; bottom: 374px; right: 5px; 
+
+}
+
+a.cta,
+button.cta{
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	background: #007FFF;
+	display: inline-block;
+	box-shadow: 0 0 0 10px rgba(0,127,255,.15);
+	padding: 20px 30px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+a.cta.alt,
+button.cta.alt{
+	background-color: #FFD400;
+	color: #111111;
+	box-shadow: 0 0 0 10px rgba(0,0,0,.15);
+}
+
+/*
+
+<div class="hero-banner">
+		<div class="wrapper">
+			<h4>Rich from <a href="http://taptapkaboom.com">Tap Tap Kaboom presents</a> presents</h4>
+				<h1>The Siliest &amp;<br/>
+				Most Awesome Gang<br/>
+				In the World!</h1>
+				<h3>It's Circle Guy, Hat Guy &amp; Red Guy.<br/>
+				They're the best of friends</h3>
+				<a class="cta alt" href="#more-info">Read More</a>
+				</div>
+				<div class="character1"></div>
+				<div class="character2"></div>	
+				<div class="character3"></div>		
+			</div>
+
+/*
