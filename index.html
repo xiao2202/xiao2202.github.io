@@ -1,61 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
-  <link rel="stylesheet" href="styles.css">
-  <script src=" https://unpkg.com/qrcode-generator@1.4.4/qrcode.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
-  <title>Document</title>
+   <title>I Miss You Earth</title>
 </head>
-
 <body>
-    <div id='label'></div><br>
-  Viewport: <span id='vp'></span>
-  
-  <div class="hero-banner">
-		<div class="wrapper">
-				<h1>The Siliest &amp;<br/>
-				Most Awesome Gang<br/>
-				In the World!</h1>
+  <h1></h1>
 
-		<h3>Our Story</h3>
-		<p>Once upon a time there was a group of shapes. They were mostly black and rectangular. They were mean and very serious.</p>
-		<p>And so they kicked the three shapes that didn't conform out of their gang, which was called the Right Angled Gang.</p>
-		<p>And so these three shapes were very sad, but found great joy and comfort being around each other. They soon started having a lot fun, started rocking and rolling, started being silly, and became the most well-known shape gang in the universe.</p>
-		<p>They even started making fun of squares and rectangles in what they like to call 'Square Offs'!</p>
-	</div>
-	<div class="sep"></div>
-	
-	<footer>
-		
-	</footer>
-	<div class="popup">
-		<div class="blanket"></div>
-		<div class="content">
-			<h2>Fill in your detail</h2>
-			<form action="">
-				<div class="item">
-					<label>Your First Name</label>
-					<input type="text" placeholder="Awesomeface" value="Xiao">
-				</div>
-				<div class="item">
-					<label>Your Last Name</label>
-					<input type="text" placeholder="Circleface">
-				</div>
-				<div class="item">
-					<label>Favourite Color</label>
-					<input type="text" placeholder="Pink">
-				</div>
-				<div class="item">
-					<label>Favourite Food</label>
-					<input type="text" placeholder="Apple Pie">
-				</div>
-				<button class="cta">I Want In!</button>
-			</form>
-			<button class="close">Close</button>
-		</div>
-	</div>
+  <p>
+	You are a little robot floating in space in a distant galaxy, thousands of light-years from home: the Earth. 
+	You want to send a message to your robot friends on Earth because you miss them so much. What do you want to say?
+  </p>
+
+  <p>Establish a connection with the Earth:</p>
+  <input type="button" id="connect" class="button" value="connect"><br>
+  <div id="device">no device yet</div>
+
+  <p>Enter your message here:</p>
+  <input type="text" id="textField" onchange="getMessage();"><br>
+  <input type="button" id="writeButton" class = "button" value="send"><br>
+  <div id ="reply"></div>
+
 </body>
 </html>
