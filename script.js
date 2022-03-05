@@ -114,4 +114,3 @@ function writeToCharacteristic(event) {
 // This is a listener for the page to load.
 // This is the command that actually starts the script:
 window.addEventListener('DOMContentLoaded', setup);
-
